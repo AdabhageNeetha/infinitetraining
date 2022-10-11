@@ -10,24 +10,36 @@ public class ItemType {
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public double getCostPerDay() {
+
         return costPerDay;
     }
 
     public void setCostPerDay(double CostPerDay) {
+
         this.costPerDay = costPerDay;
     }
 
     public double getDeposit() {
+
         return deposit;
     }
 
     public void setDeposit(double deposit) {
+
         this.deposit = deposit;
     }
+    public void display(){
+        System.out.println("Item type details");
+        //System.out.println("Item_Name : "+itemType);
+        System.out.println("Item_Name : "+costPerDay);
+        System.out.println("Item_Name : "+deposit);
+    }
+
 }
   class Festival{
     public static void main(String[] args){
