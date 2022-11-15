@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 400px;
+            height: 300px;
+            border: 8px solid transparent;
+            box-shadow: 0 0 0 2px rgb(187, 170, 170), inset 0 0 0 2px black;
+            padding: 10px;
+            margin: 10px;
+            margin-left: 500px;
+            margin-top: 100px;
+            font-size: 20px;
+            
+
+        }
+    </style>
+</head>
+<body>
+
+    <h3>The Details of the employee are: </h3>
+    <script>
+        class Person{
+        constructor(Name,Age){
+
+        this.Name = Name;
+        this.Age = Age;
+     }
+
+}
+class employee extends Person{
+    constructor(Name,Age,Role,Phone){
+        super(Name,Age);
+        this.Role = Role;
+        this.Phone = Phone;
+    }
+    getDetails(){
+        document.write("Name: " + `${this.Name}` + "<br></br>" + "Age:" + `${this.Age}` + "<br></br>" +"Role:" + `${this.Role}` + "<br></br>" + "Phone:" + `${this.Phone}` + "<br></br>");
+    
+        
+
+    }
+}
+let A = new employee("Beron",24,"Technology Anlogist",934256732);
+A.getDetails();
+    </script>
+</body>
+</html>
